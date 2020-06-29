@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>Home Control</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 35pt;
+            color: #5c5c5c;
+            font-family: 'Pacifico', cursive;
+        }
+        .btn {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #values {
+            margin-top: 0px;
+            padding: 20px 0px;
+            color: #aaaaaa;
+            font-size: 35pt;
+            transition: 2s;
+        }
+
+        .btn button i {
+            color: #fff;
+            font-size: 35pt;
+            transition: 2s;
+        }
+
+        .btn button {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #fff;
+            outline: 0px;
+            border-radius: 50%;
+            margin-bottom:0px;
+            transition: 2s;
+            background-image: linear-gradient(to left, #5a0070, #8102a1);
+        }
+            .btn button:hover {
+                margin: auto;
+                width: 100px;
+                height: 100px;
+                border: 1px solid #fff;
+                outline: 0px;
+                transition: 2s;
+                margin-bottom: 0px;
+                border-radius: 50%;
+                background-image: linear-gradient(to left, #8102a, 1#5a0070);
+            }
+    </style>
+</head>
+<body>
+    <h1>Home Control</h1>
+    <div class="btn">
+        <button onclick="updateDevice();">
+            <i class="material-icons">power_settings_new</i>
+        </button>
+        <p id="values"></p>
+    </div>
+    <script src="js/script.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getInfo();
+    </script>
+</body>
+</html>
